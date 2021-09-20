@@ -1,0 +1,106 @@
+
+#interface{
+        /* Definimos a largura da página */
+        width:1000px;
+        /* Definirmos a altura da página*/
+        height:700px;
+        /* Aqui definiremos a posição que a página ocupará na tela, nesse caso estamos definindo que fique centralizado na tela*/
+        /*top : posição de cima */
+        margin-top:0;
+        /* left: posição de esquerda*/
+        margin-left:auto;
+        /* bottom : posição de baixo */
+        margin-bottom:0;
+        /* right : posição de direita */
+        margin-right:auto;
+        /* Aqui definiremos a cor de fundo da página */
+        background-color:rgb(250, 246, 246);
+}
+
+      /**{margin: 0; padding: 0;}*/
+/*
+body{
+	font-family: auto;
+	font-size: 14px;
+}*/
+
+p{
+  text-align: justify;
+}
+
+.menu{list-style:none; border:1px solid #c0c0c0; float:right;  }
+
+.menu li{position:relative; float:right; border-right:1px solid #c0c0c0;}
+
+.menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+
+.menu li a:hover{background:#333; color:#fff; -moz-box-shadow:0 3px 10px 0 #CCC; -webkit-box-shadow:0 3px 10px 0 #ccc; text-shadow:0px 0px 5px #fff; }
+
+.menu li   ul{position:absolute; top:25px; left:0; background-color:#fff; display:none; }
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{border:1px solid #c0c0c0; display:block; width:150px;}
+
+
+#glass{
+    margin: right ;
+    width:500px;
+    /* altura da div */
+    height:auto;
+
+}
+
+#glassblack{
+  
+  width:auto;
+  height:auto;
+  margin: 10px;
+  float:right;
+
+}
+
+      #conteudo-left{
+        /*Novamente definimos a largura da div*/
+        width:500px;
+        /* altura da div */
+        height: 400px;
+        /* O atributo Float é utilizado para fazermos o nosso bloco(div)
+        literalmente flutue e se posicione onde queremos na página,
+        quando escolhemos left, dizemos que esse bloco irá se posicionar na
+        parte esquerda da página */
+        float:left;
+        /* Cor de fundo da div */
+        background-color:rgb(247, 247, 244);
+        margin: 515px ;
+        }
+
+      #conteudo-right{
+        /*Novamente definimos a largura da div*/
+        width:500px;
+        /* altura da div */
+        height:400px;
+        /* Pode parecer meio estranho usarmos o mesmo atributo left para o bloco
+        em que queremos posicionar na direita, mas como sabemos, o CSS é um estilo
+        em cascata, nossa div conteúdo definimos a largura de 1000px e na
+        conteudo-left 500px, automaticamente ao definirmos o conteudo-right
+        com 500px e à esquerda também, ele ficou à direita do conteudo-left,
+        pois o máximo que a div filha poderá ter é 1000px, sendo 500+500=1000px */
+        float:left;
+        /* Cor de fundo da div */
+        background-color:rgb(255, 254, 254);
+        margin:auto ;
+      }
+
+        #conteudo-center{
+          text-align: justify;
+          margin: center;
+          width:500px;
+        /* altura da div */
+          height: 600px;
+          /* Aqui definiremos a cor de fundo da página */
+          background-color:rgb(170, 41, 41);
+          border-bottom: 1px;
+          
+        }
+
